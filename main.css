@@ -87,7 +87,7 @@ body {
   color: white;
 }
 
-.section a:hover:not (.active) {
+.section a:hover:not(.active) {
   background-color: #ddd;
 }
 
