@@ -56,14 +56,14 @@ body {
 
 /* ==== BUTTONS ==== */
 
-.btn {
+.btn, .section a {
   display: inline-block;
   background-color: hsla(40, 56%, 35%, .3);
   text-decoration: none;
   text-align: center;
   font-family: 'Crimson Text', serif;
   font-size: 1.25rem;
-  color: hsla(39, 78%, 75%, .8);
+  color: hsla(39, 78%, 75%, 1);
   font-weight: bold;
   font-style: italic;
   white-space: nowrap;
@@ -76,8 +76,19 @@ body {
 }
 
 .btn:hover {
-  background-color: hsla(38, 85%, 41%, .5);
+  background-color: hsla(39, 78%, 75%, 1);
   border-color: rgb(153, 77, 0);
+  color: hsla(40, 56%, 35%, 1);
+  transition: background-color .6s ease-in-out;
+}
+
+.section a.active {
+  background-color: rgba(122, 59, 11, 1);
+  color: white;
+}
+
+.section a:hover:not (.active) {
+  background-color: #ddd;
 }
 
 @media (min-width: 768px) {
